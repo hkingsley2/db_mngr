@@ -12,8 +12,7 @@ if(!require(RODBC)){
 ##########
 #Get Data#
 ##########
-database <- "G:/Access Databases_A/KetoGator Database/Final Database/KetoGator Population List"
-db <- file.path("KetoGator Population List.mdb")
+db <- file.path("G:/Access Databases_A/KetoGator Database/Final Database/KetoGator Population ListKetoGator Population List.mdb")
 myconn <- odbcConnectAccess2007(db, pwd=.rs.askForPassword("Please give password =)"))
 patdat <- sqlFetch(myconn, "Patient List")
 patdat <- as.data.frame(patdat)
