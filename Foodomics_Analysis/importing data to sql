@@ -1,0 +1,8 @@
+load data local infile 'patient_file_path/result_not_summed.csv' 
+ 	into table result_not_summed
+ 	fields terminated by ',' 
+ 	enclosed by '"' 
+ 	lines terminated by '\n' 
+	ignore 1 lines 
+ 	; 
+
