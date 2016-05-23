@@ -1,0 +1,9 @@
+#setting columns to NUll
+SELECT * FROM borum_practice.daily_intake
+UPDATE table borum_practice.daily_intake
+ SET col1 = NULL 
+ WHERE col1 = '';
+
+
+#deleting parts of table
+DELETE FROM table name WHERE id=OLD.id 
